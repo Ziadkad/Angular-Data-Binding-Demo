@@ -1,27 +1,37 @@
-# InputsOutputs
+# Angular Data Binding Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+This Angular project serves as a simple demonstration of data binding in Angular.
 
-## Development server
+## What is Data Binding?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Data binding is the automatic synchronization of data between the model (or data source) and the view (UI). In Angular, there are four types of data binding:
 
-## Code scaffolding
+1. **Interpolation:** This is a one-way data binding from the component to the view. It uses double curly braces `{{ }}` to bind component data to an HTML element.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Property Binding:** Also known as one-way binding from the component to the view. It binds an element property to a component property using square brackets `[]`.
 
-## Build
+3. **Event Binding:** This is one-way binding from the view to the component. It allows you to listen to events such as click, mouseover, etc., and trigger methods in the component class using parentheses `()`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. **Two-Way Binding:** This is a combination of property binding and event binding. It allows data to flow both from the component to the view and from the view to the component. It uses the `[(ngModel)]` directive for two-way binding.
 
-## Running unit tests
+## Running the Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run this project locally, follow these steps:
 
-## Running end-to-end tests
+1. Make sure you have Node.js and npm installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory using the terminal.
+4. Run `npm install` to install project dependencies.
+5. Run `ng serve` to start the development server.
+6. Open your web browser and navigate to `http://localhost:4200/` to view the application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Further Reading
 
-## Further help
+To learn more about data binding in Angular, you can refer to the official Angular documentation:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular - Data Binding](https://angular.io/guide/binding)
+
+## Contributing
+
+If you find any issues with this project or would like to contribute, feel free to open a pull request or submit an issue in the GitHub repository.
+

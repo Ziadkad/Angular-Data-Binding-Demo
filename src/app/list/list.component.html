@@ -1,0 +1,23 @@
+
+			<div class="bg-white shadow-md rounded-lg px-3 py-2 mb-4">
+				<div class="block text-gray-700 text-lg font-semibold py-2 px-2">
+					Item List
+				</div>
+				<div class="flex items-center bg-gray-200 rounded-md">
+					<div class="pl-2">
+						&nbsp;
+					</div>
+					<input id="search" class="w-full rounded-md bg-gray-200 text-gray-700 leading-tight focus:outline-none py-2 px-2" type="text" placeholder="Search teams or members" />
+				</div>
+				<div *ngIf="usersList" class="py-3 text-sm">
+					<div *ngFor="let user of usersList" class="flex justify-start items-center cursor-pointer text-gray-700 hover:text-gray-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2">
+						<div class="flex-grow font-medium px-2">
+							{{user.name}}
+						</div>
+						<div class="text-sm font-normal text-gray-500 px-4">
+							{{user.job}}
+						</div>
+						<button type="button" (click)="removeUser(user)" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 rounded-lg text-sm px-5 py-2">Delete</button>
+					</div>
+				</div>
+			</div>
